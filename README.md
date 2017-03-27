@@ -1,7 +1,4 @@
 # Grimtsager
-Grimtsager Siden
+A project by students on 2nd Semester at Aalborg University, Aalborg. 
 
-Sidens rigtige navn er Redporren.com 
-Siden er lavet for spasserspirer
-
-Pernille har ikke noget at sige om webdesign :)
+The case we were provided is "Food & Sustainability"
