@@ -13,6 +13,7 @@
 	color:#ffffff;
 }
 
+
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
@@ -90,20 +91,6 @@
 }
 
 /********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-    color: #f5f5f5;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-    outline: none;
-    margin: 20px auto;
-}
-
-/********************************/
 /*       Slides backgrounds     */
 /********************************/
 .fade-carousel .slides .slide-1, 
@@ -116,13 +103,26 @@
 }
 .fade-carousel .slides .slide-1 {
   background-image: url(http://placehold.it/1980x800);
-); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(http://placehold.it/1980x800);
+  background-image: url(https://d3f650ayx9w00n.cloudfront.net/940/52416-03.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(http://placehold.it/1980x800);
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/71vHuqY2cpL._SX522_.jpg);
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
 }
 
 /********************************/
