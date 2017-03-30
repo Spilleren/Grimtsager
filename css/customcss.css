@@ -12,7 +12,22 @@
 	background-color:#474e5d; /*Dark Blue*/
 	color:#ffffff;
 }
+.bg-2 {
+	background-color: dimgray;
+}
 
+#Billede {
+	margin-bottom: 30px;
+}
+.navbar2 {
+		position: fixed;
+		top:0px;
+		width: 100%;
+		height:75px;
+		z-index: 9999;
+		display: none;
+		text-align: center;
+}
 
 /********************************/
 /*       Fade Bs-carousel       */

@@ -4755,4 +4755,26 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
->>>>>>> origin/master
+
+
+// Navbar halløj
+$(function(){
+			$(window).scroll(function(){
+				
+				
+				//set distance user needs to scroll before we start fadeIn
+				
+				if($(this).scrollTop()> 600){
+					$('.navbar2').fadeIn(400);
+				} else {
+					$('.navbar2').fadeOut(400);
+				}
+			});
+		});
+	});
+}(jQuery));
+
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
+
