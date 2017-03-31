@@ -318,7 +318,7 @@ if (typeof jQuery === 'undefined') {
     this.options     = options
     this.paused      = null
     this.sliding     = null
-    this.interval    = null
+    this.interval    = 400
     this.$active     = null
     this.$items      = null
 
