@@ -6,6 +6,7 @@
 	background-color: transparent;
 	background: transparent;
 	border-color: transparent;
+	
 }
 
 .bg-1 {
@@ -14,6 +15,9 @@
 }
 .bg-2 {
 	background-color: dimgray;
+}
+.bg-3{
+	background-color:palevioletred;
 }
 
 #Billede {
