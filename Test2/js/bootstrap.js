@@ -314,13 +314,13 @@ if (typeof jQuery === 'undefined') {
 
   var Carousel = function (element, options) {
     this.$element    = $(element)
-    this.$indicators = this.$element.find('.carousel-indicators')
+    this.$indicators = null
     this.options     = options
     this.paused      = null
     this.sliding     = null
     this.interval    = 400
     this.$active     = null
-    this.$items      = null
+    this.$items      = 3
 
     this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
 
