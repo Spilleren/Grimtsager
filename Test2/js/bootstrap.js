@@ -320,7 +320,7 @@ if (typeof jQuery === 'undefined') {
     this.sliding     = null
     this.interval    = 400
     this.$active     = null
-    this.$items      = 3
+    this.$items      = null
 
     this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
 
