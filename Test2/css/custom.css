@@ -14,8 +14,11 @@ body {
 	z-index:9999;
 	display: none;
 }
+.icon-bar {
+	background-color:#FF000 !important;
+}
 
-.container-fluid {
+.containerpadding {
       padding: 60px 50px;
   }
   .bg-grey {
