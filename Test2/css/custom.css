@@ -229,3 +229,8 @@ body {
   }
 
 }  
+
+.hideme
+{
+    opacity:0;
+}
