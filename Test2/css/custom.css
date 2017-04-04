@@ -9,9 +9,9 @@ body {
 	position:fixed;
 	top:0px;
 	width:100%; 
-	height:75px; 
-	background-color:#DDDDDD;
-	color: #FFFFFF;
+	height:45px; 
+	background-color:#FFF;
+	color: #FFF;
 	z-index:9999;
 	display: none;
 }

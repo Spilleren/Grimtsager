@@ -88,14 +88,14 @@
 .container .info span .fa {
   color: #EF3B3A;
 }
-
+/*
 html { 
   background: url(http://www.concierto.cl/files/2015/02/sexshop.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 body {
   background: url(http://www.concierto.cl/files/2015/02/sexshop.jpg) no-repeat center center fixed; 
