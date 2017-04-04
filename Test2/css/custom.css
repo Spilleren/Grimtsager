@@ -9,9 +9,9 @@ body {
 	position:fixed;
 	top:0px;
 	width:100%; 
-	height:75px; 
-	background-color:#DDDDDD;
-	color: #FFFFFF;
+	height:45px; 
+	background-color:#FFF;
+	color: #FFF;
 	z-index:9999;
 	display: none;
 }
@@ -59,13 +59,15 @@ body {
     }
 }
 
-
+.navbar-img-logo{
+  height: 24px;
+} 
 
 /*Footer*/
 
 
 .footer-distributed{
-  background: url(http://www.concierto.cl/files/2015/02/sexshop.jpg) no-repeat center center fixed;
+/*  background: url(http://www.concierto.cl/files/2015/02/sexshop.jpg) no-repeat center center fixed; */
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -236,8 +238,10 @@ body {
     background-color: FFF;
     background: FFF;
     padding: 60px 50px;
+    width: 100%;
+    text-align: center;
   }
-}  
+    
 .hideme
 {
     opacity:0;
