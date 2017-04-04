@@ -59,7 +59,9 @@ body {
     }
 }
 
-
+.navbar-img-logo{
+  height: 24px;
+} 
 
 /*Footer*/
 

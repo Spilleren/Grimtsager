@@ -4,14 +4,22 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
+.img-circle {
+	height: 200px;
+	width: 200px;
+	filter: grayscale(100%);
+	}
 
 .img-center {
 	margin: 0 auto;
 }
 
-footer {
-    margin: 50px 0;
+.img-facebook {
+	height: 16px;
+	width: 16px;
+}
+
+footer{
+	height: 100%;
+	width: 100%;
 }
