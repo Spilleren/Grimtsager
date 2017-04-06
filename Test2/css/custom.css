@@ -15,7 +15,9 @@ body {
 	z-index:9999;
 	display: none;
 }
-
+.navbar {
+    margin-bottom: 0;
+}
 
 .icon-bar {
 	background-color:#FF000 !important;
@@ -65,6 +67,9 @@ body {
 
 /*Footer*/
 
+.bg-footer {
+	background-color:#292c2f;
+}
 
 .footer-distributed{
 /*  background: url(http://www.concierto.cl/files/2015/02/sexshop.jpg) no-repeat center center fixed; */
@@ -77,6 +82,7 @@ body {
 
   padding: 55px 50px;
   margin-top: 80px;
+  
 }
 
 .footer-distributed .footer-left,
@@ -125,6 +131,7 @@ body {
   font-weight: normal;
   margin: 0;
 }
+
 
 /* Footer Center */
 

@@ -42,7 +42,8 @@
  
 <nav class="navbar navbar-default" id="menu">
   <div class="container-fluid">
-  <div class="navbar-header"><a class="navbar-brand" href="index.html"><img class="navbar-img-logo" src="img/logo.png"></a>
+  <div class="navbar-header">
+  <a class="navbar-brand" href="index.html"><img class="navbar-img-logo" src="img/logo.png"></a>
   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Mynavbar2"> 
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
@@ -61,14 +62,41 @@
   </div>
 </div>
 </nav>
-<!-- NAVIGATION BAR -->
  
- 
+<!-- LAD OS KONTAKTE JER! -->
+
+<div class="container-fluid containerpadding text-center">
+	<h1 class="text-capitalize"><strong>Lad os kontakte dig</strong></h1>
+		<p>Indtast dit telefonnummer så kontaker vi dig inden for 24 timer.</p>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  				<label for="usr">Navn:</label>
+  					<input type="text" class="form-control" id="usr">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  				<label for="usr">Telefonnummer:</label>
+  					<input type="tel" class="form-control" id="usr">
+			</div>
+		</div>
+		<div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 form-group">
+          <button class="btn btn-default pull-right" type="submit">Ring til mig</button>
+          <br>
+		</div>
+</div>
+
+	</div>
+
 
 <!-- Kontakt Funktion -->
 	
-	<h1 class="text-center">Kontakt</h1>
-<div id="contact" class="container">
+	
+<div id="contact" class="container-fluid containerpadding bg-grey">
+ <h1 class="text-center">Kontakt</h1>
   <br>
   <div class="row">
     <!--<div class="col-sm-5">
@@ -77,24 +105,24 @@
       <p><span class="glyphicon glyphicon-phone"></span> +45 3131 7828</p>
       <p><span class="glyphicon glyphicon-envelope"></span> Grimmefrugt@Redporren.dk</p>
     </div>-->
-    <div class="col-sm-12 slideanim">
+    <div class="col-sm-lg slideanim">
       <div class="row">
-		<div class="col-sm-3"></div>
-        <div class="col-sm-3 form-group">
+		<div class="col-lg-3"></div>
+        <div class="col-lg-3 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
-        <div class="col-sm-3 form-group">
+        <div class="col-lg-3 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
           <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="7"></textarea><br>
           </div>
       </div>	
       <div class="row">
-        <div class="col-sm-9 form-group">
+        <div class="col-lg-9 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
           <br>
           
@@ -139,55 +167,55 @@
 
 
   <!-- Footer -->
-    <footer class="footer-distributed">
-
-      <div class="footer-left">
-
-        <p class="footer-company-name">Spasserspirer &copy; 2017</p>
-      
-      </div>
-
-      <div class="footer-center">
-
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>Selma Lagerløfs Vej 300</span> 9220 Aalborg Øst, Danmark</p>
+    <div class="container-fluid bg-footer">
+      <footer class="footer-distributed">
+        
+        <div class="footer-left">
+          
+          <p class="footer-company-name">Spasserspirer &copy; 2017</p>
+          
         </div>
-
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+45 99 40 94 40</p>
+        
+        <div class="footer-center">
+          
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Selma Lagerløfs Vej 300</span> 9220 Aalborg Øst, Danmark</p>
+          </div>
+          
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+45 99 40 94 40</p>
+          </div>
+          
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:spasser@spasserspirer.com">spasser@spasserspirer.dk</a></p>
+          </div>
+          
         </div>
-
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:spasser@spasserspirer.com">spasser@spasserspirer.dk</a></p>
+        
+        <div class="footer-right">
+          
+          <p class="footer-company-about">
+            <span>Om Os</span>
+            Dette er verdens bedste hjemmeside. Sådan er det bare. Kan du fatte det?
+          </p>
+          
+          <div class="footer-icons">
+            
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            
+          </div>
+          
         </div>
-
-      </div>
-
-      <div class="footer-right">
-
-        <p class="footer-company-about">
-          <span>Om Os</span>
-          Dette er verdens bedste hjemmeside. Sådan er det bare. Kan du fatte det?
-        </p>
-
-        <div class="footer-icons">
-
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-
-        </div>
-
-      </div>
-
-    </footer>
-
-
-    <!-- FOOTERFOOT -->
+        
+        </footer>
+    </div>
+<!-- FOOTERFOOT -->
       <div class="footerfoot">
       <br>
       <center><p>A219B, 2. Semester, Interaktionsdesign, Aalborg Universitet &copy; 2017</p></center>
