@@ -257,7 +257,8 @@ a{
   .footer-distributed .footer-center i{
     margin-left: 0;
   }
-
+  
+  }
   .footerfoot{
     background-color: #FFF;
     background: #FFF;
@@ -267,11 +268,6 @@ a{
   }
     
 .hideme{
-<<<<<<< Updated upstream
-    opacity:0 !important;
-}
-	
-=======
     opacity: 0;
 }
->>>>>>> Stashed changes
+
