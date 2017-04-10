@@ -94,7 +94,7 @@ a{
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
+  font: 14px sans-serif;
 
   padding: 55px 50px;
   margin-top: 80px;
@@ -113,18 +113,6 @@ a{
 .footer-distributed .footer-left{
   width: 40%;
 
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-  color:  #ffffff;
-  font: normal 36px 'Cookie', cursive;
-  margin: 0;
-}
-
-.footer-distributed h3 span{
-  color:  #5383d3;
 }
 
 /* Footer links */
@@ -205,14 +193,14 @@ a{
   color:  #92999f;
   font-size: 13px;
   font-weight: normal;
-  margin: 0;
+  margin: 0px;
 }
 
 .footer-distributed .footer-company-about span{
   display: block;
   color:  #ffffff;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: normal;
   margin-bottom: 20px;
 }
 
