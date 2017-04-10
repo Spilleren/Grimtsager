@@ -47,6 +47,9 @@ a{
       margin: 25px 0;
     }
   }
+.social-logo {
+	  color:dimgrey;
+}
   
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
