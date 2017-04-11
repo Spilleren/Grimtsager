@@ -16,6 +16,80 @@
 </head>
 
 <body>
+
+<?php
+if(isset($_POST['email'])) {
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "pbroga16@student.aau.dk";
+    $email_subject = "Kontaktoplysninger fra mulig kunde";
+ 
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+ 
+ 
+    // validation expected data exists
+    if(!isset($_POST['name']) ||
+        !isset($_POST['telephone']) ||
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+    }
+ 
+     
+ 
+    $first_name = $_POST['name']; // required
+    $telephone = $_POST['telephone']; // not required
+ 
+ 
+ 
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$first_name)) {
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  }
+ 
+ 
+ 
+ 
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+ 
+    $email_message = "Form details below.\n\n";
+ 
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+ 
+    $email_message .= "First Name: ".clean_string($name)."\n";
+    $email_message .= "Telephone: ".clean_string($telephone)."\n";
+ 
+// create email headers
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
+
+ 
+<!-- include your own success html here -->
+ 
+Thank you for contacting us. We will be in touch with you very soon.
+ 
+ 
+}
+?>
+
+
 <!-- NAVIGATION BAR -->
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
@@ -73,15 +147,16 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
-  				<label for="usr">Navn:</label>
-  					<input type="text" class="form-control" id="usr">
+  				<label name="name">Navn:</label>
+  					<input type="text" class="form-control" id="name">
 			</div>
+		</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
-  				<label for="usr">Telefonnummer:</label>
-  					<input type="tel" class="form-control" id="usr">
+  				<label name="telephone">Telefonnummer:</label>
+  					<input type="tel" class="form-control" id="telephone">
 			</div>
 		</div>
 		<div class="row">
