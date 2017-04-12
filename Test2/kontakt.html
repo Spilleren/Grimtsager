@@ -17,7 +17,7 @@
 
 <body>
 
-<?php
+<!--<?php
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
@@ -83,12 +83,6 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
-Thank you for contacting us. We will be in touch with you very soon.
- 
- 
-}
-?>
-
 
 <!-- NAVIGATION BAR -->
 <nav class="navbar navbar-default navbar-static-top">
@@ -106,7 +100,7 @@ Thank you for contacting us. We will be in touch with you very soon.
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutus.html">Om Os</a></li>
       <li><a href="sustainability.html">Bæredygtighed</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="kontakt.html"><strong>Kontakt</strong></a></li>
       <li><a href="login.html"><span class="glyphicon">&#xe008;</span>    Login</a></li>
     </ul>
     
@@ -130,7 +124,7 @@ Thank you for contacting us. We will be in touch with you very soon.
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutus.html">Om Os</a></li>
       <li><a href="sustainability.html">Bæredygtighed</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="kontakt.html"><strong>Kontakt</strong></a></li>
       <li><a href="login.html"><span class="glyphicon">&#xe008;</span>    Login</a></li>
     </ul>
     
@@ -148,15 +142,14 @@ Thank you for contacting us. We will be in touch with you very soon.
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
   				<label name="name">Navn:</label>
-  					<input type="text" class="form-control" id="name">
+  					<input type="text" class="form-control" placeholder="Navn" id="name">
 			</div>
-		</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
   				<label name="telephone">Telefonnummer:</label>
-  					<input type="tel" class="form-control" id="telephone">
+  					<input type="tel" class="form-control" placeholder="99 40 94 40" id="telephone">
 			</div>
 		</div>
 		<div class="row">
@@ -186,7 +179,7 @@ Thank you for contacting us. We will be in touch with you very soon.
       <div class="row">
 		<div class="col-lg-3"></div>
         <div class="col-lg-3 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name2" name="name2" placeholder="Navn" type="text" required>
         </div>
         <div class="col-lg-3 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
@@ -195,7 +188,7 @@ Thank you for contacting us. We will be in touch with you very soon.
       <div class="row">
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="7"></textarea><br>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Kommentar" rows="7"></textarea><br>
           </div>
       </div>	
       <div class="row">
