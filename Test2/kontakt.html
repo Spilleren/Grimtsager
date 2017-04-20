@@ -67,56 +67,8 @@
  
 <!-- LAD OS KONTAKTE JER! -->
 
-<form name="contactform" method="post" action="send_form_email.php">
-<table width="450px">
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top"">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Comments *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
- </td>
-</tr>
-</table>
-</form>
 
+<form name="contactform" method="post" action="send_form_email.php">
 <div class="container-fluid containerpadding text-center">
 	<h1 class="text-capitalize"><strong>Lad os kontakte dig</strong></h1>
 	<hr>
@@ -125,24 +77,25 @@
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
   				<label name="name">Navn:</label>
-  					<input type="text" class="form-control" placeholder="Navn" id="name">
+  					<input type="text" name="first_name" class="form-control" placeholder="Navn" id="name">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
   				<label name="telephone">Telefonnummer:</label>
-  					<input type="tel" class="form-control" placeholder="99 40 94 40" id="telephone">
+  					<input type="text" name="telephone" class="form-control" placeholder="99 40 94 40" id="telephone" maxlength="30">
 			</div>
 		</div>
 		<div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 form-group">
-          <button class="btn btn-default pull-right" type="submit">Ring til mig</button>
-          <br>
+        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 form-group">
+          	<button class="btn btn-default pull-right" value="Submit" type="submit">Ring til mig</button>
+          	<br>
+			</div>
 		</div>
-</div>
 
-	</div>
+</div>
+</form>
 
 
 <!-- Kontakt Funktion -->
