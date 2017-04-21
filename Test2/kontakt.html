@@ -67,8 +67,15 @@
  
 <!-- LAD OS KONTAKTE JER! -->
 
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+"Please enter a valid email address");
+</script>
 
-<form name="contactform" method="post" action="send_form_email.php">
+<form name="contactform" method="post" action="contact-form-handler.php">
 <div class="container-fluid containerpadding text-center">
 	<h1 class="text-capitalize"><strong>Lad os kontakte dig</strong></h1>
 	<hr>
@@ -77,14 +84,14 @@
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
   				<label name="name">Navn:</label>
-  					<input type="text" name="first_name" class="form-control" placeholder="Navn" id="name">
+  					<input type="text" name="name" class="form-control" placeholder="Navn" id="name">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-4">
   				<label name="telephone">Telefonnummer:</label>
-  					<input type="text" name="telephone" class="form-control" placeholder="99 40 94 40" id="telephone" maxlength="30">
+  					<input type="text" name="email" class="form-control" placeholder="99 40 94 40" id="email" maxlength="30">
 			</div>
 		</div>
 		<div class="row">
@@ -150,7 +157,7 @@
                 9220 Aalborg<br>
                 Danmark<br></p>
                 <p><span class="glyphicon glyphicon-phone"></span> +45 9940 9440</p>
-				<p><span class="glyphicon glyphicon-envelope"></span> Grimtsager@redporren.dk</p> 
+				<p><span class="glyphicon glyphicon-envelope"></span> spasser@spasserspirer.dk</p> 
 
             </address>
         </div>
@@ -240,5 +247,9 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
     <script src="js/bootstrap.js"></script>
+
+    <!-- Contact form -->
+    <script src="js/gen_validatorv31.js"></script>
+
   </body>
 </html>
