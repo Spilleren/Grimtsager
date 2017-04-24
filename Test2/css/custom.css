@@ -50,6 +50,12 @@ a{
 .social-logo {
 	  color:dimgrey;
 }
+.btn-login{
+	  background-color: green;
+	  color:white;
+	  padding-top: 14px;
+	  padding-bottom: 14px;
+}
   
 .carousel-inner img {
     -webkit-filter: grayscale(90%);

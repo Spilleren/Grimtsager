@@ -68,11 +68,19 @@
 
 <div class="login-page">
   <div class="form">
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-		<a class="btn-block btn-login" href="adminindex.html">Log ind </a>
-      <p class="message">Not registered? <a href="createuser.html">Create an account</a></p>
+   <h2>Opret Bruger</h2>
+    <form class="login-form" action="create_user.php">
+      <label class="pull-left"><b>CVR-nummer</b></label>
+      	<input type="number" placeholder="CVR-nummer" name="cvr" required>
+      <label class="pull-left"><b>Email</b></B></label>
+      	<input type="email" placeholder="Enter Email" name="email" required>
+      <label class="pull-left"><b>Gentag email</b></B></label>
+      	<input type="email" placeholder="Gentag Email" name="repeat_email" required>
+      <label class="pull-left"><b>Password</b></label>
+      	<input type="password" placeholder="Enter password" name="psw" required>
+      <label class="pull-left"><b>Gentag Password</b></label>
+      	<input type="password" placeholder="Gentag password" name="repeat_psw" required>
+		<a class="btn-block btn-login" href="adminindex.html">Opret Bruger </a>
     </form>
   </div>
 </div>
