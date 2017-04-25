@@ -11,8 +11,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <link href="css/custom.css" rel="stylesheet">
     <link href="css/loginpage.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
 
 </head>
 
@@ -66,17 +67,58 @@
 <!-- NAVIGATION BAR --> 
 
 
+<!--Login Form-->
 <div class="login-page">
   <div class="form">
     <form class="login-form">
       <input type="text" placeholder="username"/>
       <input type="password" placeholder="password"/>
-		<a class="btn-block btn-login" href="adminindex.html">Log ind </a>
-      <p class="message">Not registered? <a href="createuser.html">Create an account</a></p>
+		<button class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
+          <p class="message">Ikke registeret?</p>
+      	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
+      		Opret Bruger
+      	</button>
+      
+ 
+
+      
     </form>
   </div>
 </div>
 
+<!--Opret bruger Modal-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+             <a class="btn btn-close pull-right" data-dismiss="modal" href="#">
+  			 <i class="fa fa-times fa-2x"></i> </a>
+
+      <div class="modal-header">
+       <br>
+        <h4 class="modal-title" id="myModalLabel">Opret Bruger</h4>
+      </div>
+      <form class="create-form" action="create_user.php">
+      <div class="modal-body">
+      			<label class="pull-left"><b>CVR-nummer</b></label>
+      				<input type="number" placeholder="CVR-nummer" name="cvr" required>
+			  	<label class="pull-left"><b>Email</b></B></label>
+					<input type="email" placeholder="Enter Email" name="email" required>
+			 	<label class="pull-left"><b>Gentag email</b></B></label>
+					<input type="email" placeholder="Gentag Email" name="repeat_email" required>
+			 	<label class="pull-left"><b>Password</b></label>
+					<input type="password" placeholder="Enter password" name="psw" required>
+			  	<label class="pull-left"><b>Gentag Password</b></label>
+					<input type="password" placeholder="Gentag password" name="repeat_psw" required>
+      </div>
+      <div class="modal-footer">
+      	  <br>
+		  <input type="submit" class="btn btn-primary btn-login" value="Opret Bruger">
+         <br>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
 
     <!-- FOOTERFOOT -->
       <div class="footerfoot">

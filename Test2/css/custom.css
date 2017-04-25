@@ -50,13 +50,82 @@ a{
 .social-logo {
 	  color:dimgrey;
 }
-.btn-login{
-	  background-color: green;
-	  color:white;
-	  padding-top: 14px;
-	  padding-bottom: 14px;
+
+
+.btn-create:hover{
+	 background: #828282 !important;
 }
-  
+.btn-create {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #A8A8A8 !important;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+.btn-login{
+	 font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50 !important;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+	border-radius: 4px;
+}
+.btn-login:hover {
+	background: #43A047 !important; 
+}
+
+.btn-close{
+	color:#5A5A5A;
+}
+	
+
+.create-form {
+	position: relative;
+  	z-index: 1;
+  	background: #FFFFFF;
+  	margin: 0 auto 10px;
+  	padding: 45px;
+  	text-align: center;
+}
+.create-form input {
+  	font-family: "Roboto", sans-serif;
+  	outline: 0;
+  	background: #f2f2f2;
+  	width: 100%;
+  	border: 0;
+  	margin: 0 0 15px;
+  	padding: 15px;
+  	box-sizing: border-box;
+  	font-size: 14px;
+	
+}
+input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
+
+
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
     filter: grayscale(90%); /* make all photos black and white */ 
