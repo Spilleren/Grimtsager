@@ -1,3 +1,10 @@
+<?php
+  require_once('config.php');
+
+  include('form_check.php');
+
+  //INSERT HTML + CSS
+echo'
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,10 +77,10 @@
 <!--Login Form-->
 <div class="login-page">
   <div class="form">
-    <form class="login-form" action="adminindex.html">
+    <form class="login-form">
       <input type="text" placeholder="username"/>
       <input type="password" placeholder="password"/>
-		<button class="btn btn-primary btn-lg" type="submit">Log ind </button>
+		<button class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
@@ -97,7 +104,7 @@
        <br>
         <h4 class="modal-title" id="myModalLabel">Opret Bruger</h4>
       </div>
-      <form class="create-form" action="create_user.php">
+    <form action="" method="post" class="create-form">
       <div class="modal-body">
       			<label class="pull-left"><b>CVR-nummer</b></label>
       				<input type="number" placeholder="CVR-nummer" name="cvr" id="cvr" required>
@@ -121,7 +128,7 @@
       </div>
       <div class="modal-footer">
       	  <br>
-      <input type="submit" id="submitted" name="submitted" class="btn btn-primary btn-login" value="Opret Bruger" value="Opret Bruger">
+      <input type="submit" id="submitted" name="submitted" class="btn btn-primary btn-login" value="Opret Bruger">
 <!-- 		  <input type="submit" class="btn btn-primary btn-login" value="Opret Bruger"> -->
          <br>
       </div>
@@ -142,7 +149,7 @@
     <!-- Loginpage.js -->
     <script src="js/loginpage.js"></script>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<!-- jQuery (necessary for Bootstraps JavaScript plugins) --> 
 	<script src="js/jquery-1.11.3.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
@@ -152,4 +159,68 @@
 	<script src="js/custom_script.js"></script>
 	
   </body>
-</html>
+</html>';
+
+//check fail
+
+  //Print Errors
+  if (isset($_REQUEST['submitted'])) {
+  // Print any error messages. 
+  if (!empty($errors)) { 
+  echo '<hr /><h3>The following occurred:</h3><ul>'; 
+  // Print each error. 
+  foreach ($errors as $msg) { echo '<li>'. $msg . '</li>';}
+  echo '</ul><h3>Your mail could not be sent due to input errors.</h3><hr />';}
+   else{
+  }
+}
+//End of errors array
+
+
+//ADD USER FUNCTION
+
+if( $_POST['cvr'] && $_POST['email'] && $_POST['psw'] )
+{
+    $mysqli = mysql_connect($hostnamedb, $usernamedb, $passworddb, $databasedb);
+ 
+  if (!$mysqli)
+  {
+    die('Could not connect: ' . mysql_error());
+  }
+ 
+  mysql_select_db("turmz_grimtsager", $mysqli);
+ 
+
+  $users_name = $_POST['cvr'];
+  $users_email = $_POST['email'];
+  $users_psw = $_POST['psw'];
+ 
+  $users_name = mysql_real_escape_string($users_name);
+  $users_email = mysql_real_escape_string($users_email);
+  $users_psw = mysql_real_escape_string($users_psw);
+ 
+  $query = "INSERT INTO users (`cvr`, `email`, `psw`) VALUES('$users_name', '$users_email', '$users_psw');";
+ 
+ $result = mysql_query($query);
+
+ if (!$result) {
+    $message  = 'Invalid query: ' . mysql_error() . "\n";
+    $message .= 'Whole query: ' . $query;
+    die($message);
+}
+
+
+
+
+ // mysql_free_result($result);
+
+ // mysql_query($query);
+ 
+  mysql_close($mysqli);
+}
+else{
+}
+
+
+
+?>
