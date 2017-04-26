@@ -110,13 +110,14 @@
 			  	<label class="pull-left"><b>Gentag Password</b></label>
 					<input type="password" placeholder="Gentag password" name="repeat_psw" required>
 					
-	  		<!--<div id="psw_info">
+	  		<div id="psw_info">
 	  			<h4>Dit password skal overholde følgende krav:</h4>
 	  			<ul>
-	  				<li id="unique_char" class="invalid">Være mindst <strong>2 unikke tegn</strong></li>
-	  				<li id="lenght" class="invalid">Være mindst <strong>8 tegn</strong></li>
+	  				<li id="letter" class="invalid">Indeholde mindst <strong>et bogstav</strong></li>
+	  				<li id="capital" class="invalid">Indeholde <strong>1 stort bogstav</strong></li>
+	  				<li id="length" class="invalid">Være mindst <strong>8 tegn</strong></li>
 	  			</ul>
-	  		</div>-->
+	  		</div>
       </div>
       <div class="modal-footer">
       	  <br>
@@ -138,12 +139,16 @@
 
 
     <!-- Loginpage.js -->
-    <script type="js/loginpage.js"></script>
+    <script src="js/loginpage.js"></script>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-1.11.3.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="js/bootstrap.js"></script>
+	
+	<!-- Vores egen flotte Javascript side uhhh -->
+	<script src="js/custom_script.js"></script>
+	
   </body>
 </html>
