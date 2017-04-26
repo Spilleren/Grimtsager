@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$('input[type=password]').keyup(function() {
 		
 		//Kode der bestemmer hvad der sker, når man begynder at skrive i feltet.
-			//Tjek for 
+			//Tjek for længde
 		var pswd = $(this).val();
 		
 		if (pswd.length < 8 ) {
@@ -15,6 +15,20 @@ $(document).ready(function() {
 		} else {
 			$('#length').removeClass('invalid').addClass('valid');
 		}
+			//Tjek for bogstav
+		if (pswd.match(/[A-z]/)) {
+			$('#letter').removeClass('invalid').addClass('valid');
+		} else {
+			$('#letter').removeClass('valid').addClass('invalid');
+		}
+		
+			//Tjek for stort bogstav
+		if (pswd.match(/[A-Z]/)) {
+			$('#capital').removeClass('invalid').addClass('valid');
+		} else {
+			$('#capital').removeClass('valid').addClass('invalid');
+		}
+			
 		
 	}).focus(function(){
 		//Kode der bestemmer hvad der sker når man klikker i feltet. 
