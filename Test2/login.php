@@ -4,7 +4,8 @@
   include('form_check.php');
 
   //INSERT HTML + CSS
-echo'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,10 +78,10 @@ echo'
 <!--Login Form-->
 <div class="login-page">
   <div class="form">
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-		<button class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
+    <form action="" class="login-form" method="POST">
+      <input id="username" name="username" type="text" placeholder="username"/>
+      <input id="password" name="password" type="password" placeholder="password"/>
+		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
@@ -159,9 +160,24 @@ echo'
 	<script src="js/custom_script.js"></script>
 	
   </body>
-</html>';
+</html>
 
-//check fail
+
+<?php
+///////////// LOGIN ///////////// 
+if( $_POST['username'] && $_POST['password'] )
+{
+      $mysqli = mysql_connect($hostnamedb, $usernamedb, $passworddb, $databasedb);
+ 
+  if (!$mysqli)
+  {
+    die('Could not connect: ' . mysql_error());
+  }
+ mysql_select_db("turmz_grimtsager", $mysqli);
+}
+
+///////////// LOGIN ///////////// 
+  
 
   //Print Errors
   if (isset($_REQUEST['submitted'])) {
@@ -208,19 +224,10 @@ if( $_POST['cvr'] && $_POST['email'] && $_POST['psw'] )
     $message .= 'Whole query: ' . $query;
     die($message);
 }
-
-
-
-
- // mysql_free_result($result);
-
- // mysql_query($query);
  
   mysql_close($mysqli);
 }
 else{
 }
-
-
 
 ?>
