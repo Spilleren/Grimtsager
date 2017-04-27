@@ -78,7 +78,7 @@
 <!--Login Form-->
 <div class="login-page">
   <div class="form">
-    <form action="" class="login-form" method="POST">
+    <form action="adminindex.html" class="login-form" method="POST">
       <input id="username" name="username" type="text" placeholder="username"/>
       <input id="password" name="password" type="password" placeholder="password"/>
 		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
