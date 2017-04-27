@@ -101,21 +101,20 @@
       <div class="modal-body">
       			<label class="pull-left"><b>CVR-nummer</b></label>
       				<input type="number" placeholder="CVR-nummer" name="cvr" required>
-			  	<label class="pull-left"><b>Email</b></B></label>
+			  	<label class="pull-left"><b>Email</b></label>
 					<input type="email" placeholder="Enter Email" name="email" required>
-			 	<label class="pull-left"><b>Gentag email</b></B></label>
-					<input type="email" placeholder="Gentag Email" name="repeat_email" required>
-			 	<label class="pull-left"><b>Password</b></label>
-					<input type="password" placeholder="Enter password" name="psw" required>
-			  	<label class="pull-left"><b>Gentag Password</b></label>
-					<input type="password" placeholder="Gentag password" name="repeat_psw" required>
+			 	<label class="pull-left"><b>Adgangskode</b></label>
+					<input type="password" id="password" placeholder="Enter password" name="psw" required>
+			  	<label class="pull-left"><b>Gentag Adgangskode</b></label>
+					<input type="password" id="confirm_password" placeholder="Gentag password" name="repeat_psw" required>
 					
 	  		<div id="psw_info">
-	  			<h4>Dit password skal overholde følgende krav:</h4>
+	  			<h4>Din adgangskode skal overholde følgende krav:</h4>
 	  			<ul>
 	  				<li id="letter" class="invalid">Indeholde mindst <strong>et bogstav</strong></li>
 	  				<li id="capital" class="invalid">Indeholde <strong>1 stort bogstav</strong></li>
 	  				<li id="length" class="invalid">Være mindst <strong>8 tegn</strong></li>
+	  				<li id="confirm" class="invalid"> Adgangskoderne skal være <strong>ens</strong></li>
 	  			</ul>
 	  		</div>
       </div>

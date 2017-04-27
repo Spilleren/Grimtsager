@@ -29,6 +29,15 @@ $(document).ready(function() {
 			$('#capital').removeClass('valid').addClass('invalid');
 		}
 			
+			//Tjek om password er ens
+		//var password = document.getElementById("password"),
+//		var confirm_password = document.getElementById("confirm_password");
+		
+		if ($('#password').val() == $('#confirm_password').val()) {
+			$('#confirm').removeClass('invalid').addClass('valid');
+		} else {
+			$('#confirm').removeClass('valid').addClass('invalid');
+		}
 		
 	}).focus(function(){
 		//Kode der bestemmer hvad der sker når man klikker i feltet. 

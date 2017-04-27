@@ -136,9 +136,9 @@ input[type=number]::-webkit-inner-spin-button,
 
 #psw_info {
 	position:absolute;
-    bottom:-10px;
+    bottom:10px;
     bottom: -115px\9; /* IE Specific */
-    right:15px;
+    right:-255px;
     width:250px;
     padding:0px;
     background:#fefefe;
@@ -151,10 +151,10 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 #psw_info::before {
-    content: "\25B2";
+    content: "\25C0";
     position:absolute;
-    top:-12px;
-    left:45%;
+    top:45%;
+    left:-5%;
     font-size:14px;
     line-height:14px;
     color:#ddd;
