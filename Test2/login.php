@@ -78,10 +78,10 @@
 <!--Login Form-->
 <div class="login-page">
   <div class="form">
-    <form action="" class="login-form" method="POST">
-      <input id="username" name="username" type="text" placeholder="username"/>
-      <input id="password" name="password" type="password" placeholder="password"/>
-		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
+    <form class="login-form" action="adminindex.html">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+		<button class="btn btn-primary btn-lg" type="submit">Log ind </button>
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
@@ -105,31 +105,30 @@
        <br>
         <h4 class="modal-title" id="myModalLabel">Opret Bruger</h4>
       </div>
-    <form action="" method="post" class="create-form">
+      <form class="create-form" action="create_user.php">
       <div class="modal-body">
       			<label class="pull-left"><b>CVR-nummer</b></label>
-      				<input type="number" placeholder="CVR-nummer" name="cvr" id="cvr" required>
-			  	<label class="pull-left"><b>Email</b></B></label>
-					<input type="email" placeholder="Enter Email" name="email" id="email" required>
-			 	<label class="pull-left"><b>Gentag email</b></B></label>
-					<input type="email" placeholder="Gentag Email" name="repeat_email" required>
-			 	<label class="pull-left"><b>Password</b></label>
-					<input type="password" placeholder="Enter password" name="psw" id="psw" required>
-			  	<label class="pull-left"><b>Gentag Password</b></label>
-					<input type="password" placeholder="Gentag password" name="repeat_psw" required>
+      				<input type="number" placeholder="CVR-nummer" name="cvr" required>
+			  	<label class="pull-left"><b>Email</b></label>
+					<input type="email" placeholder="Enter Email" name="email" required>
+			 	<label class="pull-left"><b>Adgangskode</b></label>
+					<input type="password" id="password" placeholder="Enter password" name="psw" required>
+			  	<label class="pull-left"><b>Gentag Adgangskode</b></label>
+					<input type="password" id="confirm_password" placeholder="Gentag password" name="repeat_psw" required>
 					
 	  		<div id="psw_info">
-	  			<h4>Dit password skal overholde følgende krav:</h4>
+	  			<h4>Din adgangskode skal overholde følgende krav:</h4>
 	  			<ul>
 	  				<li id="letter" class="invalid">Indeholde mindst <strong>et bogstav</strong></li>
 	  				<li id="capital" class="invalid">Indeholde <strong>1 stort bogstav</strong></li>
 	  				<li id="length" class="invalid">Være mindst <strong>8 tegn</strong></li>
+	  				<li id="confirm" class="invalid"> Adgangskoderne skal være <strong>ens</strong></li>
 	  			</ul>
 	  		</div>
       </div>
       <div class="modal-footer">
       	  <br>
-      <input type="submit" id="submitted" name="submitted" class="btn btn-primary btn-login" value="Opret Bruger">
+      <input type="submit" id="submitted" name="submitted" class="btn btn-primary btn-login" value="Opret Bruger" value="Opret Bruger">
 <!-- 		  <input type="submit" class="btn btn-primary btn-login" value="Opret Bruger"> -->
          <br>
       </div>
@@ -150,7 +149,7 @@
     <!-- Loginpage.js -->
     <script src="js/loginpage.js"></script>
 
-	<!-- jQuery (necessary for Bootstraps JavaScript plugins) --> 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-1.11.3.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
