@@ -1,11 +1,3 @@
-<?php
-  require_once('config.php');
-
-  include('form_check.php');
-
-  //INSERT HTML + CSS
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,18 +76,10 @@
       <input id="username" name="username" type="text" placeholder="username"/>
       <input id="password" name="password" type="password" placeholder="password"/>
 		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
-
-    <form class="login-form" action="adminindex.html">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-		<button class="btn btn-primary btn-lg" type="submit">Log ind </button>
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
       	</button>
-      
- 
-
       
     </form>
   </div>
@@ -112,14 +96,14 @@
        <br>
         <h4 class="modal-title" id="myModalLabel">Opret Bruger</h4>
       </div>
-      <form class="create-form" action="create_user.php">
+      <form class="create-form" action="" method="POST">
       <div class="modal-body">
       			<label class="pull-left"><b>CVR-nummer</b></label>
-      				<input type="number" placeholder="CVR-nummer" name="cvr" required>
+      				<input id="cvr"type="number" placeholder="CVR-nummer" name="cvr" required>
 			  	<label class="pull-left"><b>Email</b></label>
-					<input type="email" placeholder="Enter Email" name="email" required>
+					<input id="email" type="email" placeholder="Enter Email" name="email" required>
 			 	<label class="pull-left"><b>Adgangskode</b></label>
-					<input type="password" id="password" placeholder="Enter password" name="psw" required>
+					<input type="password" id="psw" placeholder="Enter password" name="psw" required>
 			  	<label class="pull-left"><b>Gentag Adgangskode</b></label>
 					<input type="password" id="confirm_password" placeholder="Gentag password" name="repeat_psw" required>
 					
@@ -168,22 +152,38 @@
   </body>
 </html>
 
-
 <?php
-///////////// LOGIN ///////////// 
-if( $_POST['username'] && $_POST['password'] )
-{
-      $mysqli = mysql_connect($hostnamedb, $usernamedb, $passworddb, $databasedb);
- 
+  require_once('config.php');
+
+  include('form_check.php');
+
+///////////// <LOGIN> ///////////// 
+if (isset($_POST['submit-login'])){
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  $mysqli = mysql_connect($hostnamedb, $usernamedb, $passworddb, $databasedb);
+
   if (!$mysqli)
   {
     die('Could not connect: ' . mysql_error());
   }
- mysql_select_db("turmz_grimtsager", $mysqli);
+  
+  mysql_select_db("turmz_grimtsager", $mysqli);
+
+  $sql = "SELECT * FROM `users` WHERE username='$username' and password='$password'";
+
+  $result_login = mysql_query($sql) or die(mysql_error());
+  
+  $count = mysql_num_rows($result_login);
+  if ($count == 1){
+    echo "You are logged in";
+  }else {
+    echo "Login Failed";
+  }
 }
 
-///////////// LOGIN ///////////// 
-  
+///////////// </LOGIN> ///////////// 
 
   //Print Errors
   if (isset($_REQUEST['submitted'])) {
@@ -196,6 +196,8 @@ if( $_POST['username'] && $_POST['password'] )
    else{
   }
 }
+
+
 //End of errors array
 
 
