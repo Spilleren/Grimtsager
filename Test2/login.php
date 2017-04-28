@@ -78,17 +78,17 @@
 <!--Login Form-->
 <div class="login-page">
   <div class="form">
-<<<<<<< HEAD
+
+
     <form action="adminindex.html" class="login-form" method="POST">
       <input id="username" name="username" type="text" placeholder="username"/>
       <input id="password" name="password" type="password" placeholder="password"/>
 		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
-=======
+
     <form class="login-form" action="adminindex.html">
       <input type="text" placeholder="username"/>
       <input type="password" placeholder="password"/>
 		<button class="btn btn-primary btn-lg" type="submit">Log ind </button>
->>>>>>> Fixed login
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
