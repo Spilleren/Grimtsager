@@ -39,3 +39,5 @@
 
 	//print users
 	getUsers();
+
+?>

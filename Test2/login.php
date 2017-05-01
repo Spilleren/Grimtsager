@@ -72,10 +72,10 @@
   <div class="form">
 
 
-    <form action="adminindex.html" class="login-form" method="POST">
+    <form action="check_login.php" class="login-form" method="POST">
       <input id="username" name="username" type="text" placeholder="username"/>
       <input id="password" name="password" type="password" placeholder="password"/>
-		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg" href="adminindex.html">Log ind </button>
+		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg">Log ind </button>
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
@@ -154,34 +154,7 @@
 
 <?php
   require_once('config.php');
-
-  include('form_check.php');
-
-///////////// <LOGIN> ///////////// 
-if (isset($_POST['submit-login'])){
-  $username = $_POST['username'];
-  $password = $_POST['password'];
-
-  $mysqli = mysql_connect($hostnamedb, $usernamedb, $passworddb, $databasedb);
-
-  if (!$mysqli)
-  {
-    die('Could not connect: ' . mysql_error());
-  }
-  
-  mysql_select_db("turmz_grimtsager", $mysqli);
-
-  $sql = "SELECT * FROM `users` WHERE username='$username' and password='$password'";
-
-  $result_login = mysql_query($sql) or die(mysql_error());
-  
-  $count = mysql_num_rows($result_login);
-  if ($count == 1){
-    echo "You are logged in";
-  }else {
-    echo "Login Failed";
-  }
-}
+  require_once('check_login.php');
 
 ///////////// </LOGIN> ///////////// 
 
