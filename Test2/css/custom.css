@@ -194,8 +194,21 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 .navbar-img-logo{
-  height: 24px;
+  height: 50px;
+	padding-bottom: 18px;
 } 
+.nav-bg {
+	background-color:indianred;
+}
+.nav-side-bg {
+	background-color:dimgrey;
+}
+.nav-header {
+	height: 50px;
+	padding: 15px;
+	font-size: 18px;
+	color:peru;
+}
 
 .container-knap {
 	position: absolute;
@@ -392,3 +405,25 @@ input[type=number]::-webkit-inner-spin-button,
     opacity: 0;
 }
 
+
+.bg-graf-head {
+	background-color: grey;
+	color:white;
+	height: 40px;
+	padding:6px;
+	margin: 0px !important;
+}
+
+.charts {
+	max-width: 95%;
+	max-height:95%;
+	padding:3px;
+	
+}
+
+.info-graf {
+	padding:0px !important;
+	border: solid; 
+	margin:50px;
+	min-height: 350px;
+}
