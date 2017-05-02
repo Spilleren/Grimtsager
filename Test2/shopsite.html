@@ -18,10 +18,19 @@
   	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- Custom CSS -->
+    
+    <!-- Boostrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Admin CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+    
+    <!-- dataTables CSS -->
+    <link href="css/dataTables/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fixedHeader/fixedHeader.bootstrap.css" rel="stylesheet" type="text/css"/>
+ 	<link href="css/select/select.bootstrap.css" rel="stylesheet" type="text/css"/>
+  	
+   	<!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
 
 
@@ -190,7 +199,7 @@
                     </div>
                 </div>
                 	<div class="table">
-                		<table id="products" class="table table-bordered table-striped table-shopsite display">
+                		<table id="products" class="table table-bordered table-striped display" cellspacing="0">
                 			<thead>
                 			    <tr class="active">
                 			    <th><i class="fa fa-search"></i><input type="text" id="search" value></th>
@@ -244,7 +253,17 @@
                					<td>1726</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
-               					<td>Danmark</td>
+               					<td>Tyskland</td>
+               					<td>5 kr.</td>
+               					<td>1726</td>
+               					<td><i class="heart fa fa-heart-o"></i></td>
+               					<td></td>
+               				</tr>
+               				<tr>
+               					<td>1726</td>
+               					<td>Danroots</td>
+               					<td>Gulerod</td>
+               					<td>Spanien</td>
                					<td>5 kr.</td>
                					<td>1726</td>
                					<td><i class="heart fa fa-heart-o"></i></td>
@@ -264,7 +283,7 @@
                					<td>1726</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
-               					<td>Danmark</td>
+               					<td>Angora</td>
                					<td>5 kr.</td>
                					<td>1726</td>
                					<td><i class="heart fa fa-heart-o"></i></td>
@@ -284,7 +303,7 @@
                					<td>1726</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
-               					<td>Danmark</td>
+               					<td>Bøhlandet</td>
                					<td>5 kr.</td>
                					<td>1726</td>
                					<td><i class="heart fa fa-heart-o"></i></td>
@@ -294,7 +313,7 @@
                					<td>1726</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
-               					<td>Danmark</td>
+               					<td>Sverigeland</td>
                					<td>5 kr.</td>
                					<td>1726</td>
                					<td><i class="heart fa fa-heart-o"></i></td>
@@ -304,17 +323,7 @@
                					<td>1726</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
-               					<td>Danmark</td>
-               					<td>5 kr.</td>
-               					<td>1726</td>
-               					<td><i class="heart fa fa-heart-o"></i></td>
-               					<td></td>
-               				</tr>
-               				<tr>
-               					<td>1726</td>
-               					<td>Danroots</td>
-               					<td>Gulerod</td>
-               					<td>Danmark</td>
+               					<td>Frankerland</td>
                					<td>5 kr.</td>
                					<td>1726</td>
                					<td><i class="heart fa fa-heart-o"></i></td>
@@ -456,7 +465,10 @@
     <script src="js/bootstrap.min.js"></script>
     
     <!-- Data Tables Javascript -->
-    
+    <script type="text/javascript" src="js/dataTables/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="js/dataTables/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" src="js/fixedHeader/dataTables.fixedHeader.js"></script>
+	<script type="text/javascript" src="js/select/dataTables.select.js"></script>
     
    
     <!-- Vores eget lille hygge script -->
