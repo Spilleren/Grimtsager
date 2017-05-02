@@ -440,7 +440,7 @@ input[type=number]::-webkit-inner-spin-button,
 	text-align: center;
 
 }
-.table-shopsite th td {
-	min-width: 200px;
+.table-shopsite th {
+	text-align: center; 
 	
 }
