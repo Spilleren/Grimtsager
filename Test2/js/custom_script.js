@@ -73,3 +73,40 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#products').DataTable();
 } );
+
+
+$('#products').DataTable( {
+    fixedHeader: true
+} );
+
+
+// addme
+
+$('.addme').click(function(){
+		var $this = $(this);
+		$this.toggleClass('addme');
+		if($this.hasClass('addme')){
+			$this.val('Tilføj');			
+		} else {
+			$this.val('Tilføjet');
+		}
+	});
+
+$('.addme').click(function(){
+	$(this).toggleClass('added');
+});
+
+
+// Klon produkter
+
+var rows = $('#products tbody tr'),
+    copyTable = $('#products_chosen tbody');
+
+rows.click(function() {
+    var row = $(this),
+        cloneRow = row.clone(),
+        thisIndex = rows.index(row);
+    
+    copyTable.append(cloneRow);
+    
+});
