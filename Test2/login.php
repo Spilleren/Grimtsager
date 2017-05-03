@@ -195,6 +195,8 @@ if( $_POST['cvr'] && $_POST['email'] && $_POST['psw'] )
   $users_name = mysql_real_escape_string($users_name);
   $users_email = mysql_real_escape_string($users_email);
   $users_psw = mysql_real_escape_string($users_psw);
+
+  $users_psw = md5($users_psw);
  
   $query = "INSERT INTO users (`cvr`, `email`, `psw`) VALUES('$users_name', '$users_email', '$users_psw');";
  
