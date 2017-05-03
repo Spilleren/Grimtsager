@@ -49,7 +49,7 @@ if (isset($_POST['submit-login'])){
 
 //Loyniorðið er goymt í md5. Hetta fyri trygleika. Tað verður scrambled á netinum.
 //Taka input frá brúkarinum og scrambla tað, og tjekka dátabasan.
-  }elseif(md5($_POST["password"]) == $password){
+  }elseif($password == crypt($_POST["password"], $password)){
   //redirect to the 'thank you' page
   header('Location: adminindex.html');
 
