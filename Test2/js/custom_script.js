@@ -80,33 +80,22 @@ $('#products').DataTable( {
 } );
 
 
-// addme
+// addme skift farve og skrift.
+
+var items = [];
 
 $('.addme').click(function(){
 		var $this = $(this);
 		$this.toggleClass('addme');
 		if($this.hasClass('addme')){
-			$this.val('Tilføj');			
+			$this.val('Tilføj').toggleClass('added');			
 		} else {
-			$this.val('Tilføjet');
+			$this.val('Tilføjet').toggleClass('added');
+			var newTr = $(this).closest("tr").clone();
+			items.push(newTr);
+			newTr.appendTo($("#products_chosen"));;
 		}
 	});
 
-$('.addme').click(function(){
-	$(this).toggleClass('added');
-});
 
 
-// Klon produkter
-
-var rows = $('#products tbody tr'),
-    copyTable = $('#products_chosen tbody');
-
-rows.click(function() {
-    var row = $(this),
-        cloneRow = row.clone(),
-        thisIndex = rows.index(row);
-    
-    copyTable.append(cloneRow);
-    
-});
