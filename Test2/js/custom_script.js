@@ -93,9 +93,12 @@ $('.addme').click(function(){
 			$this.val('Tilføjet').toggleClass('added');
 			var newTr = $(this).closest("tr").clone();
 			items.push(newTr);
-			newTr.appendTo($("#products_chosen"));;
+			newTr.appendTo($("#products_chosen"));
 		}
 	});
+
+
+
 
 
 // Udregning af pris
