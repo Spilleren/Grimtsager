@@ -232,7 +232,7 @@
 									<th>Producent</th>
 									<th>Navn</th>
 									<th>Land</th>
-									<th>Pris pr. kg.</th>
+									<th>Pris i kr. pr. kg.</th>
 									<th>Mængde</th>
 									<th>Favorit</th>
 									<th></th>
@@ -244,8 +244,8 @@
                					<td>Danroots</td>
                					<td>Gulerod</td>
                					<td>Danmark</td>
-               					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td ><input class="price" value="5" name="price"></input></td>
+               					<td><input type="number" value="" class="qty" name="qty"></input></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
@@ -254,8 +254,8 @@
                					<td>Danroots</td>
                					<td>Gulerod</td>
                					<td>Tyskland</td>
-               					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td class="price" name="price"> 5 kr </td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
@@ -264,8 +264,8 @@
                					<td>Danroots</td>
                					<td>Agurk</td>
                					<td>Spanien</td>
-               					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td><input type="text" value="5" class="price" name="price"</td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
@@ -352,8 +352,19 @@
 									<th></th>
 								</tr>
 							</thead>
+              				<tbody
                				<tr>
                				</tr>
+							</tbody>
+              				<tfoot>
+    							<tr>
+    							<td></td>
+    							<td></td>
+    							<td></td>
+    							<td><input type="text" class="grdtot" value="" name=""/></td>
+   								</tr>
+							</tfoot>
+               			
 						</table>
                 
 

@@ -98,4 +98,30 @@ $('.addme').click(function(){
 	});
 
 
+// Udregning af pris
+
+var $tblrows = $("#products_chosen tbody tr");
+$tblrows.each(function (index) {
+    var $tblrow = $(this);
+ 
+    $tblrow.find('.qty').on('change', function () {
+ 
+		var qty = $tblrow.find("[name=qty]").val();
+		var price = $tblrow.find("[name=price]").val();
+		var subTotal = parseInt(qty,10) * parseFloat(price);
+		
+	if (!isNaN(subTotal)) {
+ 
+    $tblrow.find('.subtot').val(subTotal.toFixed(2));
+    var grandTotal = 0;
+ 
+    $(".subtot").each(function () {
+        var stval = parseFloat($(this).val());
+        grandTotal += isNaN(stval) ? 0 : stval;
+    });
+ 
+    $('.grdtot').val(grandTotal.toFixed(2));
+}
+})});
+
 
