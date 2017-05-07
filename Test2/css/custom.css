@@ -25,7 +25,7 @@ a{
 }
 
 .icon-bar {
-	background-color:#FF000 !important;
+	background-color: #FF0000 !important;
 }
 
 .containerpadding {
@@ -170,7 +170,6 @@ input[type=number]::-webkit-inner-spin-button,
 	color: #ec3f41;
 	
 }
-
 .valid {
 	background:url(../img/icons/Tick_Mark-16.png) no-repeat 0 50%;
 	padding-left:20px;
@@ -220,11 +219,27 @@ input[type=number]::-webkit-inner-spin-button,
 	align-content: center;
 }
 
+
 .heart {
 	font-size:5px;
 	color:red;
 }
+.sustainability{
+  -webkit-filter: grayscale(90%);
+  height: 200px;
+  width: 100%;
+  background: url(https://www.thestar.com/content/dam/thestar/life/food_wine/2016/03/23/loblaws-gets-ugly-with-its-produce-department/group-shot-2.jpg.size.custom.crop.1086x725.jpg) no-repeat center center;
+  background-size: cover;
+}
+.sustainability-p{
+  font-size: 90px;
+  color: #FFFFFF;
 
+}
+.sustainability-h1{
+  font-size: 30px;
+  color: #FFFFFF;
+}
 
 /*Footer*/
   .footerfoot-img-credit{

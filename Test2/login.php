@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Spasserspirer - Spasserer all the way - Login</title>
+    <title>Grimtsager - Vi er smukke indeni :: Login</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -73,8 +73,8 @@
 
 
     <form action="check_login.php" class="login-form" method="POST">
-      <input id="username" name="username" type="text" placeholder="username"/>
-      <input id="password" name="password" type="password" placeholder="password"/>
+      <input id="username" name="username" type="text" placeholder="CVR-nummer"/>
+      <input id="password" name="password" type="password" placeholder="Adgangskode"/>
 		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg">Log ind </button>
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
