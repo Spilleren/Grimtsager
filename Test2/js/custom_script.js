@@ -91,11 +91,19 @@ $('.addme').click(function(){
 			$this.val('Tilføj').toggleClass('added');			
 		} else {
 			$this.val('Tilføjet').toggleClass('added');
-			var newTr = $(this).closest("tr").clone();
+			var newTr = $(this).closest("tr").clone().append("<td><button id='delete-btn'>Fjern</button></td>");
 			items.push(newTr);
 			newTr.appendTo($("#products_chosen"));
 		}
 	});
+
+
+// Delete knap
+
+$(document).on('click','#delete-btn',function() {
+	$(this).closest('tr').remove();
+});
+
 
 
 
