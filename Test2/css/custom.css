@@ -563,3 +563,11 @@ input[type=number]::-webkit-inner-spin-button,
 	color:white;
 	padding: 4px 17px 4px 17px;
 }
+
+.qty {
+	text-align: center;
+}
+
+#pris {
+	margin-right:20px;
+}

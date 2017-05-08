@@ -141,92 +141,92 @@
 							</thead>
                			
                				<tr>
-               					<td>1726</td>
+               					<td>1</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
                					<td>Danmark</td>
-               					<td ><input class="price" value="5" name="price"></input></td>
+               					<td>5 kr</td>
                					<td><input type="number" value="" class="qty" name="qty"></input></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" id="add" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>2</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
                					<td>Tyskland</td>
-               					<td class="price" name="price"> 5 kr </td>
+               					<td>5 kr</td>
                					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>3</td>
                					<td>Danroots</td>
                					<td>Agurk</td>
                					<td>Spanien</td>
-               					<td><input type="text" value="5" class="price" name="price"</td>
+               					<td>5 kr</td>
                					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>4</td>
                					<td>Danroots</td>
                					<td>Tomat</td>
                					<td>Danmark</td>
                					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>5</td>
                					<td>Danroots</td>
                					<td>Sne</td>
                					<td>Angora</td>
                					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>6</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
                					<td>Danmark</td>
                					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>7</td>
                					<td>Danroots</td>
                					<td>Gulerod</td>
                					<td>Bøhlandet</td>
                					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>8</td>
                					<td>Danroots</td>
                					<td>Æble</td>
                					<td>Sverigeland</td>
                					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
                				<tr>
-               					<td>1726</td>
+               					<td>9</td>
                					<td>Danroots</td>
                					<td>Æble</td>
                					<td>Frankerland</td>
                					<td>5 kr.</td>
-               					<td>1726</td>
+               					<td><input type="number" value="" class="qty" name="qty"></td>
                					<td><i class="heart fa fa-heart-o fa-2x"></i></td>
                					<td><input type="button" class="addme" Value="Tilføj"></input></td>
                				</tr>
@@ -249,7 +249,7 @@
 									<th>Land</th>
 									<th>Pris pr. kg.</th>
 									<th>Mængde</th>
-									<th>Favorit</th>
+									<th>favorit</th>
 									<th></th>
 									<th></th>
 								</tr>
@@ -259,12 +259,100 @@
                				</tr>
 							</tbody>
               				<tfoot>
-    							<tr>
     						
-   								</tr>
 							</tfoot>
                			
 						</table>
+               <button type="button" class="btn btn-primary btn-lg btn-login" data-toggle="modal" data-target="#myModal">
+      				Bestil
+      			</button>
+               
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+								 <a class="btn btn-close pull-right" data-dismiss="modal" href="#">
+								 <i class="fa fa-times fa-2x"></i> </a>
+
+						  <div class="modal-header">
+						   <br>
+							<h4 class="modal-title" id="myModalLabel">Afslut Bestilling</h4>
+						  </div>
+							  <table id="products_buy" class="table table-bordered table-striped table-shopsite display" cellspacing="0">
+								<thead>
+									<tr class="active">
+										<th>ID</th>
+										<th>Producent</th>
+										<th>Navn</th>
+										<th>Land</th>
+										<th>Pris pr. kg.</th>
+										<th>Mængde</th>
+										<th>Pris</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>3</td>
+										<td>Danroots</td>
+										<td>Agurk</td>
+										<td>Spanien</td>
+										<td>5 kr</td>
+										<td>10 stk</td>
+										<td>50 kr.</td>
+										
+									</tr>
+									<tr>
+										<td>9</td>
+               							<td>Danroots</td>
+										<td>Æble</td>
+										<td>Frankerland</td>
+										<td>5 kr.</td>
+										<td>15 stk</td>
+										<td>75 kr.</td>
+									</tr>
+									<tr>
+										<td>6</td>
+               							<td>Danroots</td>
+               							<td>Gulerod</td>
+               							<td>Danmark</td>
+               							<td>5 kr.</td>
+										<td>20 stk</td>
+										<td>100 kr.</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Danroots</td>
+										<td>Gulerod</td>
+										<td>Bøhlandet</td>
+										<td>5 kr.</td>
+										<td>25 stk</td>
+										<td>125 kr.</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+
+									</tr>
+								</tfoot>
+
+							</table>
+							
+							<div id="pris" class="pull-right">
+								<h3>Pris</h3>
+								<p>Pris 250 kr.</p>
+								<p>Fragt 750 kr.</p>
+								<p><u>I alt 1000 kr.</u></p>
+							</div>
+						  
+						  
+						  <div class="modal-footer">
+							  <br>
+						  	  <br>
+						  	  	<a href="confirmed.html" class="btn btn-primary btn-login">Bestil</a>
+						  </div>
+						 
+						</div>
+					  </div>
+					</div>
                 
 
            
