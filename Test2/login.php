@@ -31,7 +31,7 @@
   </div>
   <div class="collapse navbar-collapse" id="#Mynavbar">
     <ul class="nav navbar-nav navbar-right"> 
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Forside</a></li>
       <li><a href="aboutus.html">Om Os</a></li>
       <li><a href="sustainability.html">Bæredygtighed</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
@@ -54,7 +54,7 @@
   </div>
   <div class="collapse navbar-collapse" id="#Mynavbar2">
     <ul class="nav navbar-nav navbar-right"> 
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Forside</a></li>
       <li><a href="aboutus.html">Om Os</a></li>
       <li><a href="sustainability.html">Bæredygtighed</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
@@ -131,7 +131,7 @@
     <!-- FOOTERFOOT -->
       <div class="footerfoot">
         <center>
-        <p class="footerfoot-p">  This website and all of its contents is for educational purposes only. A219B, 2. Semester, Interaktionsdesign, Aalborg Universitet &copy; 2017</p>
+        <p class="footerfoot-p1">  This website and all of its contents is for educational purposes only. A219B, 2. Semester, Interaktionsdesign, Aalborg Universitet &copy; 2017</p>
         </center>
       </div>
     <!-- FOOTERFOOT -->

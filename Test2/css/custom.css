@@ -1,13 +1,25 @@
+/*
+Dyb brun: #1f0f0b;
+Jordbrun: #43281d;
+Lysebrun: #896d5e;
+Beige: #c1bbb0;
+Grå: #727272;
+Blå: #244050;
+Hvid: #FFFFFF;
+Sort: #000000;
+*/
+
 @charset "utf-8";
 /* CSS Document */
 
 body {
 	margin: 0;
-	font-family:'Open sans Light' 'Open Sans', sans-serif;
+	font-family:'Open Sans Light' 'Open Sans', sans-serif;
+
 }
 
 a{
-  color: #FFF;
+  color: #1f0f0b;
 
 }
 #menu {
@@ -15,8 +27,8 @@ a{
 	top:0px;
 	width:100%; 
 	height:45px; 
-	background-color:#FFF;
-	color: #FFF;
+	background-color:#FFFFFF;
+	color: #FFFFFF;
 	z-index:9999;
 	display: none;
 }
@@ -177,8 +189,6 @@ input[type=number]::-webkit-inner-spin-button,
 	color:#3a7d34;
 }
 .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
     width: 100%; /* Set width to 100% */
     margin: auto;
 }
@@ -231,6 +241,27 @@ input[type=number]::-webkit-inner-spin-button,
   background: url(https://www.thestar.com/content/dam/thestar/life/food_wine/2016/03/23/loblaws-gets-ugly-with-its-produce-department/group-shot-2.jpg.size.custom.crop.1086x725.jpg) no-repeat center center;
   background-size: cover;
 }
+.sustainability1{
+ /* -webkit-filter: grayscale(90%);*/
+  height: 10px;
+  width: 100%;
+  background: url(http://doctorblush.com/img/slideshow/8.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.sustainability2{
+ /* -webkit-filter: grayscale(90%);*/
+  height: 100px;
+  width: 100%;
+  background: url(http://doctorblush.com/img/slideshow/8.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.sustainability-footer{
+  -webkit-filter: grayscale(90%);
+  height: 10px;
+  width: 100%;
+  background: url(http://doctorblush.com/img/slideshow/8.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
 .sustainability-p{
   font-size: 90px;
   color: #FFFFFF;
@@ -248,24 +279,29 @@ input[type=number]::-webkit-inner-spin-button,
 
   .footerfoot-p{
     font-size: 10px;
-    color: #D3D3D3;
+    color: #000000;
   }
 
-  .bg-footer {
-	background-color:#292c2f;
-}
+  .footerfoot-p1{
+    font-size: 10px;
+    color: lightgray;
+  }
+
 
 .footer-distributed{
-  /* background: url(http://www.concierto.cl/files/2015/02/sexshop.jpg) no-repeat center center fixed; */ 
+  background: url(http://www.doctorblush.com/img/pattern.png);
+  background-size: 140px 140px;
+  background-repeat: repeat;
   background-color: #292c2f;
+  /* background-color: #292c2f; */
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: 14px sans-serif;
 
-  padding: 55px 50px;
-  margin-top: 80px;
+  padding: 50px 40px;
+  margin-top: 0px;
   
 }
 
@@ -280,13 +316,14 @@ input[type=number]::-webkit-inner-spin-button,
 
 .footer-distributed .footer-left{
   width: 40%;
+  color: #FFFFFF;
 
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links{
-  color:  #ffffff;
+  color:  #FFFFFF;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -295,11 +332,11 @@ input[type=number]::-webkit-inner-spin-button,
   display:inline-block;
   line-height: 1.8;
   text-decoration: none;
-  color:  inherit;
+  color:  #FFFFFF;
 }
 
 .footer-distributed .footer-company-name{
-  color:  #8f9296;
+  color:  #292c2f;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -313,8 +350,7 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #33383b;
-  color: #ffffff;
+  color: #292c2f;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -332,7 +368,7 @@ input[type=number]::-webkit-inner-spin-button,
 
 .footer-distributed .footer-center p{
   display: inline-block;
-  color: #ffffff;
+  color: #292c2f;
   vertical-align: middle;
   margin:0;
 }
@@ -345,7 +381,7 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 .footer-distributed .footer-center p a{
-  color:  #5383d3;
+  color:  #292c2f;
   text-decoration: none;;
 }
 
@@ -358,7 +394,7 @@ input[type=number]::-webkit-inner-spin-button,
 
 .footer-distributed .footer-company-about{
   line-height: 20px;
-  color:  #92999f;
+  color:  #292c2f;
   font-size: 13px;
   font-weight: normal;
   margin: 0px;
@@ -385,7 +421,7 @@ input[type=number]::-webkit-inner-spin-button,
   border-radius: 2px;
 
   font-size: 20px;
-  color: #ffffff;
+  color: #292c2f;
   text-align: center;
   line-height: 35px;
 
@@ -544,4 +580,14 @@ input[type=number]::-webkit-inner-spin-button,
 	min-width: 30px;
 	float: left;
 
+}
+
+.omos-logo{
+  height: 70%;
+  width: 70%;
+}
+
+.miljomarke-logo{
+  height: 250px;
+  width: 200px;
 }
