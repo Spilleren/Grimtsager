@@ -196,9 +196,11 @@ input[type=number]::-webkit-inner-spin-button,
 .navbar-img-logo{
  	height: 50px;
 	padding-bottom: 18px;
+	filter: invert(100%);
+
 } 
 .nav-bg {
-	background-color:indianred;
+	background-color:rgb(136, 109, 92);
 	border: none;
 }
 .nav-side-bg {
@@ -462,7 +464,7 @@ input[type=number]::-webkit-inner-spin-button,
 .addme {
 	border-radius: 5px;
 	border: none;
-	background-color: midnightblue;
+	background-color: rgb(36,63,130);
 	color:white;
 	padding: 4px 17px 4px 17px;
 }
@@ -544,4 +546,20 @@ input[type=number]::-webkit-inner-spin-button,
 	min-width: 30px;
 	float: left;
 
+}
+
+#delete-btn {
+	border-radius: 5px;
+	border: none;
+	background-color: red;
+	color:white;
+	padding: 4px 17px 4px 17px;
+}
+
+#delete-btn:hover {
+	border-radius: 5px;
+	border: none;
+	background-color: darkred;
+	color:white;
+	padding: 4px 17px 4px 17px;
 }
