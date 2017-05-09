@@ -206,11 +206,10 @@ input[type=number]::-webkit-inner-spin-button,
 .navbar-img-logo{
  	height: 50px;
 	padding-bottom: 18px;
-	filter: invert(100%);
 
 } 
 .nav-bg {
-	background-color:rgb(136, 109, 92);
+	background-color:#896D5E;
 	border: none;
 }
 .nav-side-bg {
@@ -526,7 +525,7 @@ input[type=number]::-webkit-inner-spin-button,
 	font-size: 22px;
 	background-color:#676666;
 	color: white;
-	padding-left: 0px;
+	padding: 5px 0px 5px 20px ;
 
 	
 }
@@ -616,4 +615,9 @@ input[type=number]::-webkit-inner-spin-button,
 .miljomarke-logo{
   height: 250px;
   width: 200px;
+}
+
+.nav-img {
+		filter: invert(100%);
+
 }
