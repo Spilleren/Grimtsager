@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Grimtsager - Vi er smukke indeni :: Login</title>
+  <title>Grimtsager - Vi giver de grimme en chance til :: Login</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -71,8 +71,10 @@
 <div class="login-page">
   <div class="form">
 
+  <img src="img/logo.png" height="60%" width="60%">
 
     <form action="check_login.php" class="login-form" method="POST">
+      <br>
       <input id="username" name="username" type="text" placeholder="CVR-nummer"/>
       <input id="password" name="password" type="password" placeholder="Adgangskode"/>
 		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg">Log ind </button>
@@ -80,6 +82,7 @@
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
       	</button>
+          <p class="message"><a href="404.html">Glemt adgangskode?</a></p>        
       
     </form>
   </div>
