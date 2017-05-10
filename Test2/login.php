@@ -71,13 +71,13 @@
 <div class="login-page">
   <div class="form">
 
-  <img src="img/logo.png" height="60%" width="60%">
+  <a href="index.html"><img src="img/logo.png" height="60%" width="60%"></a>
 
     <form action="check_login.php" class="login-form" method="POST">
       <br>
       <input id="username" name="username" type="text" placeholder="CVR-nummer"/>
       <input id="password" name="password" type="password" placeholder="Adgangskode"/>
-		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg">Log ind </button>
+		<button id="submit-login" name="submit-login" class="btn btn-primary btn-lg btn-login">Log ind </button>
           <p class="message">Ikke registeret?</p>
       	<button type="button" class="btn btn-primary btn-lg btn-create" data-toggle="modal" data-target="#myModal">
       		Opret Bruger
@@ -134,7 +134,7 @@
     <!-- FOOTERFOOT -->
       <div class="footerfoot">
         <center>
-        <p class="footerfoot-p1">  This website and all of its contents is for educational purposes only. A219B, 2. Semester, Interaktionsdesign, Aalborg Universitet &copy; 2017</p>
+        <p class="footerfoot-p1">  This website and all of its contents are for educational purposes only. A219B, 2. Semester, Interaktionsdesign, Aalborg Universitet &copy; 2017</p>
         </center>
       </div>
     <!-- FOOTERFOOT -->
