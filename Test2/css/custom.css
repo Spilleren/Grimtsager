@@ -716,3 +716,18 @@ input[type=number]::-webkit-inner-spin-button,
 	margin-left: 30px;
 	
 }
+
+
+
+.btn-kontakt {
+	border-color: white;
+	color: white;	
+}
+.btn-kontakt:hover{
+	border-color: #BFBFBF;
+	color: #BFBFBF;
+}
+
+.h3-containter-knap {
+	color:#E7E7E7;
+}
