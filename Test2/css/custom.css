@@ -254,11 +254,11 @@ input[type=number]::-webkit-inner-spin-button,
 
 .h1-contaniner-knap{
   font-size: 90px;
-  color: #c1bbb0;
+  color: #FFFFFF !important;
 }
 .h3-contaniner-knap{
   font-size: 90px;
-  color: #c1bbb0;
+  color: #FFFFFF !important;
 }
 
 
