@@ -4507,10 +4507,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background: url(http://www.doctorblush.com/img/pattern.png);
+  /*background: url(http://www.doctorblush.com/img/pattern.png);*/
   background-size: 140px 140px;
   background-repeat: repeat;
-  background-color: #244050;
+  background-color: #3B5998;
 
 }
 .navbar-default .navbar-brand {
