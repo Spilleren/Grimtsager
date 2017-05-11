@@ -276,7 +276,6 @@ input[type=number]::-webkit-inner-spin-button,
 	color:red;
 }
 .sustainability{
-  -webkit-filter: grayscale(90%);
   height: 200px;
   width: 100%;
   background: url(https://www.thestar.com/content/dam/thestar/life/food_wine/2016/03/23/loblaws-gets-ugly-with-its-produce-department/group-shot-2.jpg.size.custom.crop.1086x725.jpg) no-repeat center center;
@@ -284,7 +283,6 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 .sustainability2{
-  -webkit-filter: grayscale(90%);
   height: 100px;
   width: 100%;
   background: url(http://doctorblush.com/img/slideshow/8.jpg) no-repeat center center fixed;

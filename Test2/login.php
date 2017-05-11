@@ -35,7 +35,7 @@
       <li><a href="aboutus.html">Om Os</a></li>
       <li><a href="sustainability.html">Bæredygtighed</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
-      <li><a href="login.html"><span class="glyphicon">&#xe008;</span>    <strong>Login</strong></a></li>
+      <li><a href="login.php"><span class="glyphicon">&#xe008;</span>    <strong>Login</strong></a></li>
     </ul>
     
   </div>
@@ -58,7 +58,7 @@
       <li><a href="aboutus.html">Om Os</a></li>
       <li><a href="sustainability.html">Bæredygtighed</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
-      <li><a href="login.html"><span class="glyphicon">&#xe008;</span>    <strong>Login</strong></a></li>
+      <li><a href="login.php"><span class="glyphicon">&#xe008;</span>    <strong>Login</strong></a></li>
     </ul>
     
   </div>
