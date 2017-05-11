@@ -122,4 +122,10 @@ $(function () {
 });
 
 
+$("body select").msDropDown();
+
+
+// Betalingsmuligheder
+
+
 
