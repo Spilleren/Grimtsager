@@ -4,6 +4,29 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+h1{
+  color: #237056;
+}
+h2{
+  color: #237056;
+}
+h3{
+  color: #237056;
+}
+h4{
+  color: #237056;
+}
+h5{
+  color: #237056;
+}
+h6{
+  color: #237056;
+}
+
+.page-header{
+	color: #237056 !important;
+}
+
 .img-circle {
 	height: 200px;
 	width: 200px;
