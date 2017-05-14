@@ -739,5 +739,26 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 .h3-containter-knap {
-	color:#E7E7E7;
+	color:#FFFFFF;
 }
+
+#myCarousel {
+	height: 700px;
+}
+@media (min-width: 768px) {
+	#myCarousel{
+		height: 
+	}	
+}
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #383838,
+    1px -1px 0 #383838,
+    -1px 1px 0 #383838,
+    1px 1px 0 #383838;
+    
+}
+
