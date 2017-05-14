@@ -71,7 +71,7 @@
 <div class="login-page">
   <div class="form">
 
-  <a href="index.html"><img src="img/logo.png" height="60%" width="60%"></a>
+  <a href="index.html"><img src="img/logo-2.png" height="60%" width="60%"></a>
 
     <form action="check_login.php" class="login-form" method="POST">
       <br>
