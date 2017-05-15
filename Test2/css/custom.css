@@ -57,6 +57,9 @@ a:hover {
 .nav.navbar-nav.navbar-right li a {
     color: white;
 }
+.nav.navbar-nav.navbar-right li a:hover {
+    color: #B7CFA9;
+}
 
 .navbar.transparent.navbar-inverse .navbar-inner {
     border-width: 0px;
@@ -247,7 +250,7 @@ input[type=number]::-webkit-inner-spin-button,
 
 } 
 .nav-bg {
-	background-color: #896d5e;
+	background-color: #4c4c4c;
 	border: none;
 }
 .nav-side-bg {
@@ -730,8 +733,10 @@ input[type=number]::-webkit-inner-spin-button,
 
 
 .btn-kontakt {
+	font-size: 20px;
 	border-color: white;
-	color: white;	
+	color: white;
+	border-radius: 30px;
 }
 .btn-kontakt:hover{
 	border-color: #BFBFBF;
@@ -762,3 +767,14 @@ input[type=number]::-webkit-inner-spin-button,
     
 }
 
+
+.table-header {
+	background-color: #5A5A5A;
+	text-align: left;
+	color: white;
+}
+
+.showoff {
+	height:200px;
+	
+}
