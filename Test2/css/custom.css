@@ -748,11 +748,11 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 #myCarousel {
-	height: 700px;
+	height: 600px;
 }
-@media (min-width: 1081) {
+@media (max-width: 1000) {
 	#myCarousel{
-		height: 100%;
+		height: auto;
 	}	
 }
 
