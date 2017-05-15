@@ -750,9 +750,9 @@ input[type=number]::-webkit-inner-spin-button,
 #myCarousel {
 	height: 700px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1081) {
 	#myCarousel{
-		height: 
+		height: 100%;
 	}	
 }
 
