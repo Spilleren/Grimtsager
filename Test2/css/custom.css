@@ -241,7 +241,7 @@ input[type=number]::-webkit-inner-spin-button,
 }
 .carousel-inner img {
     width: 100%; /* Set width to 100% */
-    /*filter: brightness(60%);*/
+    filter: brightness(60%);
     margin: auto;
     /*background-position: 50% 50%;*/
     /* position: 50% 50%; */
@@ -757,6 +757,12 @@ input[type=number]::-webkit-inner-spin-button,
   background-color: #135b21;
 	color: white;
 }
+.btn-kontakt:active{
+  border-color: #135b21;
+  background-color: #135b21;
+  color: white;
+  box-shadow: 1px 3.5px 5px  #000;  
+}
 
 .h3-containter-knap {
 	color:#FFFFFF;
@@ -794,7 +800,7 @@ input[type=number]::-webkit-inner-spin-button,
 	
 }
 .btn-shadow {
-	box-shadow: 1px 4.5px 20px  #000;
+	box-shadow: 1px 4.5px 5px  #000;
 	
 }
 
