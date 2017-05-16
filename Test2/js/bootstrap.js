@@ -2381,7 +2381,7 @@ if (typeof jQuery === 'undefined') {
 (function($) {          
     $(document).ready(function(){                    
         $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
+            if ($(this).scrollTop() > 450) {
                 $('#menu').fadeIn(500);
             } else {
                 $('#menu').fadeOut(500);

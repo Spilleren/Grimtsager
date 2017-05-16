@@ -37,8 +37,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img class="navbar-img-logo" src="img/logo.png"></a>
+                <a class="navbar-brand" href="adminindex.html"><img class="navbar-img-logo" src="img/logo.png"></a>
             </div>
+            <div class="collapse navbar-collapse">
+            	<ul class=" nav navbar navbar-right">
+            		<li class="logout">
+            			<a href="Index.html"><i class="fa fa-sign-out fa-2x"></i></a>
+            		</li>
+            	</ul>
+            	</div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="profile active">
@@ -104,15 +111,15 @@
 				          	<input type="submit" name="opdater" class="btn btn-primary btn-opdate pull-right" value="Opdater">
 					           	<br>
 
-					           	
+					           		
 					  </form>						           	
                         	
                 </div>
                 
                 <div class="col-lg-6 chat-box nopad" >
                                 	
-					<div class="panel panel-primary">
-						<div class="panel-heading">
+					<div class="chat-panel chat-primary">
+						<div class=" chat-header">
 							<span class="glyphicon glyphicon-comment"></span> Chat
 							<div class="btn-group pull-right">
 								<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -197,7 +204,7 @@
 							<div class="input-group">
 								<input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
 								<span class="input-group-btn">
-									<button class="btn btn-warning btn-sm" id="btn-chat">
+									<button class="btn btn-success btn-sm" id="btn-chat">
 										Send</button>
 								</span>
 							</div>
