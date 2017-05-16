@@ -103,8 +103,11 @@ a:hover {
       margin: 25px 0;
     }
   }
-.social-logo {
-	  color:dimgrey;
+.fb-logo {
+	  color:#3B5998;
+}
+.linkedin-logo {
+	color:#0077B5;
 }
 
 .blur{
@@ -794,3 +797,32 @@ input[type=number]::-webkit-inner-spin-button,
 	box-shadow: 1px 4.5px 20px  #000;
 	
 }
+
+.chat-header {
+	color:white;
+	padding:10px 15px;
+	background-color:#676666;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.chat-primary {
+	border-color: #838181
+}
+
+.chat-primary .chat-panel {
+	color: #fff;
+    background-color: #838181;
+    border-color: #838181;
+}
+
+.chat-panel{
+	margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #838181 ;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.logout {
+	margin-right: 20px;
