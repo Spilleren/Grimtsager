@@ -856,4 +856,7 @@ input[type=number]::-webkit-inner-spin-button,
 	padding-top: 100px;
 	
 }
-
+.img-small{
+  height: 50%;
+  width: 50%
+}
