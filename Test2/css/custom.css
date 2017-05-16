@@ -6,8 +6,6 @@ Beige: #c1bbb0;
 
 Emerald: #237056;
 
-Grøn: #209938;
-
 Grå: #727272;
 Blå: #244050;
 Hvid: #FFFFFF;
@@ -25,11 +23,11 @@ body {
 }
 
 h2{
-  color: #727272;
+  color: #237056;
 }
 
 p{
-  color: #727272;
+  color: #237056;
 }
 a{
   color: #c1bbb0;
@@ -37,12 +35,6 @@ a{
 a:hover {
   color: #c1bbb0;
 }
-
-.logo-svg{
-  height: 50%;
-  width: 50%;
-}
-
 
 #menu {
 	position:fixed;
@@ -118,7 +110,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #209938 !important;
+  background: #237056 !important;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -130,7 +122,7 @@ a:hover {
   border-radius: 4px;
 }
 .btn-login:hover {
-  background: #197a2c !important; 
+  background: #237066 !important; 
 }
 
 .btn-create:hover{
@@ -167,7 +159,7 @@ a:hover {
 .create-form input {
   	font-family: "Roboto", sans-serif;
   	outline: 0;
-  	background.: #f2f2f2;
+  	background: #f2f2f2;
   	width: 100%;
   	border: 0;
   	margin: 0 0 15px;
@@ -240,9 +232,6 @@ input[type=number]::-webkit-inner-spin-button,
     width: 100%; /* Set width to 100% */
     /*filter: brightness(60%);*/
     margin: auto;
-    /*background-position: 50% 50%;*/
-    /* position: 50% 50%; */
-    /*background-size: cover;*/
 }
 
 .carousel-caption h3 {
@@ -292,7 +281,7 @@ input[type=number]::-webkit-inner-spin-button,
 	position: absolute;
 	top:200px; 
 	width: 100%; 
-	height:50%;
+	height:100%;
 	align-content: center;
   color: #c1bbb0 !important;
 }
@@ -327,20 +316,21 @@ input[type=number]::-webkit-inner-spin-button,
 
   .footerfoot-p{
     font-size: 10px;
-    color: #727272;
+    color: #237056;
   }
 
   .footerfoot-p1{
     font-size: 10px;
-    color: #727272;
+    color: #000000;
   }
 
 
 .footer-distributed{
-  /* background: url(http://www.doctorblush.com/img/pattern.png);
+  background: url(http://www.doctorblush.com/img/pattern.png);
   background-size: 140px 140px;
-  background-repeat: repeat;*/
-  background-color: #4B4B4B;
+  background-repeat: repeat;
+  background-color: #244050;
+  /* background-color: #292c2f; */
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   color: #c1bbb0;
   box-sizing: border-box;
@@ -582,7 +572,7 @@ input[type=number]::-webkit-inner-spin-button,
 	margin-top:45px;
 	border-style: solid;
 	border-width: 0.5px;
-	border-color: #676666;
+	border-color: #838181;
 	border-radius: 4px;
 	margin-right: 10px;
 }
@@ -675,9 +665,7 @@ input[type=number]::-webkit-inner-spin-button,
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
-.grey {
-  background-color: lightgrey !important;
-}
+
 .btn-opdate {
 	 font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -736,7 +724,7 @@ input[type=number]::-webkit-inner-spin-button,
 	margin-top:-80px;
 	border-style: solid;
 	border-width: 0.5px;
-	border-color: #676666;
+	border-color: #838181;
 	border-radius: 4px;
 	margin-left: 30px;
 	
@@ -746,15 +734,13 @@ input[type=number]::-webkit-inner-spin-button,
 
 .btn-kontakt {
 	font-size: 20px;
-	border-color: #209938;
-  background-color: #209938;
+	border-color: white;
 	color: white;
 	border-radius: 30px;
 }
 .btn-kontakt:hover{
-	border-color: #135b21;
-  background-color: #135b21;
-	color: white;
+	border-color: #BFBFBF;
+	color: #BFBFBF;
 }
 
 .h3-containter-knap {
@@ -774,10 +760,10 @@ input[type=number]::-webkit-inner-spin-button,
 {
     color: white;
     text-shadow:
-    -1px -1px 0 #696969,
-    1px -1px 0 #696969,
-    -1px 1px 0 #696969,
-    1px 1px 0 #696969;
+    -1px -1px 0 #383838,
+    1px -1px 0 #383838,
+    -1px 1px 0 #383838,
+    1px 1px 0 #383838;
     
 }
 
@@ -792,7 +778,34 @@ input[type=number]::-webkit-inner-spin-button,
 	height:200px;
 	
 }
-.btn-shadow {
-	box-shadow: 1px 4.5px 4px #494949;
+
+.chat-header {
+	color:white;
+	padding:10px 15px;
+	background-color:#676666;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.chat-primary {
+	border-color: #838181
+}
+
+.chat-primary .chat-panel {
+	color: #fff;
+    background-color: #838181;
+    border-color: #838181;
+}
+
+.chat-panel{
+	margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #838181 ;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.logout {
+	margin-right: 20px;
 	
 }
