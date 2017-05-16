@@ -122,16 +122,7 @@ $(function () {
 });
 
 
-//Billedskifter
 
-var image = new Array ();
-image[0] = "../label1.png";
-image[1] = "../label2.png";
-image[2] = "../label3.png";
-var size = image.length
-var x = Math.floor(size*Math.random())
-
-$('#random').attr('src',image[x]);
 
 
 
