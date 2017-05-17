@@ -860,3 +860,12 @@ input[type=number]::-webkit-inner-spin-button,
   height: 50%;
   width: 50%
 }
+
+.bg-dg {
+	background-color: #1f1f1f;
+	color: white;
+}
+
+.clients-logo {
+	height:100px;
+}
