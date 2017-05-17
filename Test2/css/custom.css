@@ -868,10 +868,23 @@ input[type=number]::-webkit-inner-spin-button,
 .bg-dg {
 	background-color: #1f1f1f;
 	color: white;
+	padding:20px;
+}
+.clients-container {
+	 {
+    width: 1170px;
+}
 }
 
 .clients-logo {
+	height:150px;
+	padding-left: 60px;
+	padding-right: 60px;
 	height:100px;
+}
+
+.client-row {
+	margin-top: 50px;
 }
 
 .grayscale {
