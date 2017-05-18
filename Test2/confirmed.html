@@ -2,15 +2,24 @@
 <html lang="en">
 
 <head>
-	<title>Spasserspirer - Spasserer all the way</title>
 
+  <title>Grimtsager - Vi giver de grimme en chance til :: Admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
 
-  	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- Custom CSS -->
+    <!-- Boostrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Admin CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
+    
+    <!-- dataTables CSS -->
+    <link href="css/dataTables/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fixedHeader/fixedHeader.bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/select/select.bootstrap.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
 
 
@@ -29,7 +38,7 @@
 
     <div id="wrapper">
 
-        <!-- Navigation -->
+               <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top nav-bg" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -39,24 +48,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img class="navbar-img-logo nav-img" src="img/logo.png"></a>
+                <a class="navbar-brand" href="adminindex.html"><img class="navbar-img-logo" src="img/logo.png"></a>
             </div>
+              <div class="collapse navbar-collapse">
+              <ul class=" nav navbar navbar-right">
+              </ul>
+              </div>
+            <!-- Top Menu Items -->
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="profile">
-                    	<a href="usersite.html"><i class="fa fw fa-user fa-2x"></i><strong> Profil</strong></a>
-                    </li>
-                    <li class="active">
-                        <a href="adminindex.html"><i class="fa fa-fw fa-desktop"></i> Skrivebord</a>
+                    <li>
+                          <a href="usersite.html"><i class="fa fa-fw fa-lg fa-user"></i> Profil</a>
+                        </li>
+                    <li>
+                        <a href="adminindex.html"><i class="fa fa-fw fa-lg fa-home"></i> Overblik</a>
                     </li>
                     <li>
-                        <a href="shopsite.html"><i class="fa fa-fw fa-shopping-cart"></i> Bestilling</a>
+                        <a href="shopsite.html"><i class="fa fa-fw fa-lg fa-shopping-cart"></i>Bestilling</a>
                     </li>
                     <li>
-                        <a href=""><i class="fa fa-fw fa-clock-o"></i> Historik</a>
-					</li>
-                    
+                        <a href="orders.html"><i class="fa fa-fw fa-lg fa-clock-o"></i> Mine ordre</a>
+                   </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-lg fa-sign-out"></i> Log ud</a>
+                   </li>                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -67,18 +83,23 @@
             <div class="container-fluid">
 
 
+
 <!--                 PAGE STARTS HERE                  -->
 
 
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12 ">
+                    <center>
                         <h1 class="page-header">
-                            Køb gennemført <br>
-                            <small>stort tillykke :) </small>
+                            Køb gennemført <br><br><br>
+                            <img src="img/accept.png">
+                            <br><br><br>
+                            <small>Tak for dit køb - din faktura kommer på e-mail om et øjeblik. Du kan også finde den under <a href="orders.html" class="confirmed-a">Mine ordrer.
                         </h1>
 
                     </div>
+                    </center>
                 </div>
                 <!-- /.row -->
 				

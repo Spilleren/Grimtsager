@@ -908,3 +908,6 @@ input[type=number]::-webkit-inner-spin-button,
   filter: none;
   -webkit-filter: brightness(85 %) invert() !important;
 }
+.confirmed-a{
+  color: #727272 !important;
+}
